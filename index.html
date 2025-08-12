@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Stylish Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+      font-size: 28px;
+      font-weight: bold;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    main {
+      padding: 20px;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    button {
+      background: #ff9800;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>🌟 Welcome to Core of pencil 🌟</header>
+  <main>
+    <p>✨Hello there! This page deals with pencil carvings and frames✨.</p>
+    <button onclick="sayHello()">Click Me</button>
+  </main>
+  <footer>By Rohith Gummuluri </footer>
+
+  <script>
+    function sayHello() {
+      alert("🌈 thanks for chosesing us");
+    }
+  </script>
+</body>
+</html>
